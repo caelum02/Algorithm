@@ -36,7 +36,8 @@ int main(){
             }
         }
         if(prev[E]==-1) break;
-        int minf = INF;
+        
+		int minf = INF;
         for(int i=E; i!=S; i=prev[i])
             minf = min(minf, cap[prev[i]][i]-flow[prev[i]][i]);
         
