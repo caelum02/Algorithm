@@ -8,6 +8,7 @@ typedef pair<int, int> pii;
 typedef long long ll;
 int N; pii b;
 
+// p1 as origin 
 inline int ccw(pii p1, pii p2, pii p3){
 	ll op = 1LL*(p2.x-p1.x)*(p3.y-p1.y)-1LL*(p3.x-p1.x)*(p2.y-p1.y);
 	return (op>0 ? 1 : (op==0 ? 0 : -1));
